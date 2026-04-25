@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #00d100;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}   
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO  */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 8%;
+}
+
+.hero-content {
+    max-width: 900px;
+    width: 100%;
+}
+
+.hero-kicker {
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #00d100;
+    margin-bottom: 14px;
+}
+
+#title {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 60px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+
+/* TIMELINE */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 56px;
+    border-left: 2px solid rgba(0, 209, 0, 0.4);
+    padding-left: 32px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.anno {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #00d100;
+    min-width: 70px;
+    line-height: 1;
+    text-shadow: 0 0 12px rgba(0, 209, 0, 0.4);
+}
+
+.timeline-body h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.timeline-body p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+    max-width: 560px;
+}
+
+.timeline-body em {
+    color: #00d100;
+    font-style: normal;
+}
+
+.hero-quote {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+    border-left: 3px solid #00d100;
+    padding: 12px 0 12px 24px;
+    margin-bottom: 56px;
+    line-height: 1.7;
+}
+
+/* TRE COLONNE  */
+
+.tre-colonne {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.colonna {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(0, 209, 0, 0.25);
+    border-radius: 12px;
+    padding: 24px 20px;
+    backdrop-filter: blur(6px);
+    transition: border-color 0.3s;
+}
+
+.colonna:hover {
+    border-color: rgba(0, 209, 0, 0.7);
+}
+
+.colonna-icon {
+    display: block;
+    color: #00d100;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.colonna h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.colonna p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+}
+
+/* VIDEO SOTTOFONDO  */
+
+p {
+    color: white;
+}
+
+.video-bg-container {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;       
+    overflow: hidden;
+    background-color: black; 
+}
+
+.video-bg-container iframe {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    pointer-events: none; 
+    z-index: -2; 
+}
+
+.video-bg-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1; 
+}
+
+/* SCOPRI */
+
+.scopri {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 10%;
+    min-height: 55vh;
+    backdrop-filter: blur(3px);
+    color: white;
+}
+
+.info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d100; 
+}
+
+.info-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.info-image img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.info-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.bottone-scopri {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 2px solid #00d100;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.bottone-scopri:hover {
+    background-color: #00d100;
+    color: black;
+}
+
+
+.video-bg-container {
+    background-color: black; 
+}
+
+.video-bg-container iframe {
+    opacity: 0; 
+    animation: comparsaVideo 2s ease-in forwards;
+    animation-delay: 3.5s; 
+}
+
+@keyframes comparsaVideo {
+    to {
+        opacity: 1;
+    }
+}

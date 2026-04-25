@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Centers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="materie.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="video-bg-container">
+        <iframe 
+            src="https://www.youtube.com/embed/lhitM_N6dJk?autoplay=1&controls=0&loop=1&mute=1&showinfo=0&playlist=lhitM_N6dJk"
+            frameborder="0" 
+            allow="autoplay; encrypted-media">
+        </iframe>
+    </div>
+
+   
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <p class="hero-kicker">Il costo nascosto del digitale</p>
+
+
+            <h1 id="title">I Data Center<br>e l'Energia</h1>
+
+
+            <div class="big-stat" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <span class="big-number">200</span>
+                <span class="big-label">TWh consumati ogni anno dai data center nel mondo —<br>più dell'intera nazione italiana.</span>
+            </div>
+
+
+            <p class="hero-intro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                Ogni ricerca, ogni video, ogni messaggio che inviamo vive fisicamente 
+                in enormi edifici pieni di server. Questi data center non dormono mai — 
+                e per non surriscaldarsi, consumano energia in quantità colossali.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="blocco" data-aos="fade-up" data-aos-duration="1200">
+        <div class="blocco-testo">
+            <span class="numero-sezione">01</span>
+            <h2>Il problema: il calore</h2>
+            <p>
+                I processori dei server lavorano a piena potenza 24 ore su 24. 
+                Ogni calcolo genera calore. Se quel calore non viene rimosso, 
+                i chip si danneggiano nel giro di minuti.
+            </p>
+            <p>
+                Per questo il <em>raffreddamento</em> è la sfida principale 
+                dei data center moderni: può arrivare a consumare fino al 
+                <strong>40%</strong> dell'energia totale della struttura.
+            </p>
+        </div>
+        <!-- Statistica visiva a fianco del testo -->
+        <div class="blocco-stat">
+            <div class="cerchio-stat">
+                <span class="cerchio-numero">40%</span>
+                <span class="cerchio-desc">energia usata<br>solo per raffreddare</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="blocco-cards" data-aos="fade-up" data-aos-duration="1200">
+        <h2 class="sezione-titolo">Come si raffredda un data center?</h2>
+
+
+        <div class="cards-grid">
+            <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                <span class="card-icon">❄️</span> 
+                <h3>Aria condizionata tradizionale</h3>
+                <p>
+                    Grandi impianti CRAC pompano aria fredda sotto i pavimenti sopraelevati. 
+                    Semplice ma molto energivoro — il metodo più diffuso ancora oggi.
+                </p>
+                <span class="card-tag inefficiente">Efficienza bassa</span>
+            </div>
+
+
+            <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                <span class="card-icon">🌊</span> 
+                <h3>Raffreddamento ad acqua</h3>
+                <p>
+                    L'acqua assorbe il calore molto meglio dell'aria. 
+                    Tubi di acqua fredda corrono direttamente vicino ai chip. 
+                    Molto più efficiente, ma costoso da installare.
+                </p>
+                <span class="card-tag media">Efficienza media</span>
+            </div>
+
+
+            <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <span class="card-icon">⚡️</span> 
+                <h3>Immersione in liquido dielettrico</h3>
+                <p>
+                    I server vengono immersi in un liquido speciale non conduttivo 
+                    che assorbe il calore direttamente. La tecnologia del futuro: 
+                    riduce i consumi energetici fino al <strong>95%</strong> rispetto all'aria.
+                </p>
+                <span class="card-tag ottima">Efficienza alta</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blocco invertito" data-aos="fade-up" data-aos-duration="1200">
+        <div class="blocco-testo">
+            <span class="numero-sezione">02</span>
+            <h2>Come si misura l'efficienza?</h2>
+            <p>
+                Si usa un indice chiamato <em>PUE — Power Usage Effectiveness</em>. 
+                È semplicissimo: divide tutta l'energia consumata dal data center 
+                per la sola energia usata dai server.
+            </p>
+            <p>
+                Un PUE di <strong>1.0</strong> sarebbe perfetto: zero sprechi. 
+                La media globale è ancora intorno a <strong>1.58</strong>. 
+                I migliori data center moderni di Google e Microsoft raggiungono <strong>1.1</strong>.
+            </p>
+        </div>
+
+        <div class="blocco-stat">
+            <div class="pue-scale">
+                <div class="pue-bar">
+                    <span class="pue-label-top">Ideale</span>
+                    <div class="pue-marker verde">1.0</div>
+                </div>
+                <div class="pue-bar">
+                    <span class="pue-label-top">Big Tech</span>
+                    <div class="pue-marker giallo">1.1</div>
+                </div>
+                <div class="pue-bar">
+                    <span class="pue-label-top">Media globale</span>
+                    <div class="pue-marker rosso">1.58</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="conclusione" data-aos="fade-up" data-aos-duration="1200">
+        <blockquote class="hero-quote">
+            "Ogni clic ha un costo. La sostenibilità digitale<br>è la sfida invisibile del nostro tempo."
+        </blockquote>
+
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="index.html" class="bottone-scopri">← Torna alla Home</a>
+            <a href="malthus.html" class="bottone-scopri">Vai al modello di Malthus →</a>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+
+</body>
+</html>
