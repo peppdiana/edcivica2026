@@ -265,3 +265,12 @@ p {
         opacity: 1;
     }
 }
+
+.intro-materie {
+    margin-bottom: 40vh;
+    margin-top: 12vh;
+}
+
+.hero-intro {
+    font-size: 1.3em;
+}
